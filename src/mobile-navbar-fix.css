@@ -1,0 +1,179 @@
+/* Modern Mobile UI Fixes */
+@media (max-width: 768px) {
+  /* Ensure no horizontal scroll on mobile */
+  body, html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  .app-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  /* ----------------------
+     Sleek Glassmorphic Navbar 
+     ---------------------- */
+  .navbar-new {
+    padding: 0.8rem 1rem !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    flex-wrap: nowrap !important; /* Prevents awkward wrapping */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 -1rem !important; /* Stretch past padding on mobile */
+  }
+
+  /* Hamburger to the left */
+  .hamburger-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px !important; /* slightly rounded square looks modern */
+    background: rgba(235, 77, 100, 0.05) !important;
+    color: var(--primary-red) !important;
+    font-size: 1.4rem !important;
+    margin-right: auto !important; /* pushes everything else right */
+    border: 1px solid rgba(235, 77, 100, 0.1) !important;
+  }
+
+  /* Center the logo absolutely so side elements don't shift it */
+  .logo-new {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: 0 !important;
+    flex-grow: 0 !important;
+    width: auto !important;
+  }
+  
+  .logo-new span:first-child {
+    font-size: 1.6rem !important;
+  }
+  
+  .logo-new span:last-child {
+    font-size: 1.4rem !important;
+    margin-top: 5px !important;
+  }
+
+  /* Right Side Actions Group */
+  .nav-right-actions {
+    gap: 0.6rem !important;
+    z-index: 10 !important;
+    flex-wrap: nowrap !important;
+    margin-left: auto !important;
+  }
+
+  /* Hide language switcher on mobile to clear clutter in top bar */
+  .nav-right-actions .lang-search > div:not(.search-icon) {
+    display: none !important;
+  }
+
+  /* Sleek circular buttons */
+  .search-icon, .icon-btn-new {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.2rem !important;
+    border-radius: 50% !important;
+    background: white !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+    border: 1px solid rgba(234, 211, 196, 0.6) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .nav-profile-pic {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    border: 2px solid white !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    object-fit: cover !important;
+  }
+
+  /* Modern mobile drawer */
+  .nav-mobile-drawer {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    border-right: 1px solid rgba(255,255,255,0.4) !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  /* ----------------------
+     Hero Section & Layout fixes
+     ---------------------- */
+  /* Prevent 'Desi Munda' text overlapping */
+  .hero-new {
+    margin-top: 1rem !important;
+    padding: 1.5rem 1rem !important;
+    flex-direction: column !important;
+  }
+  
+  .hero-content-new {
+    padding: 1rem !important;
+    text-align: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero-title-new {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-buttons-new {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 1rem !important;
+  }
+
+  .hero-buttons-new .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 1rem !important;
+  }
+
+  .hero-tags-new {
+    justify-content: center !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Two column grids turning to 1 on mobile */
+  .main-layout {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .competitions-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Live Reels fixes */
+  .ui-reel-card {
+    height: 400px !important; /* Not too tall on mobile */
+  }
+
+  .ui-bottom-components {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ui-story-circle {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
