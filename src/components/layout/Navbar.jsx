@@ -33,13 +33,13 @@ const Navbar = ({ onOpenSearch, onOpenCart, onOpenNotif, cartCount = 0, unreadCo
           </button>
         </div>
         <div className="nav-mobile-links">
-          <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.home')}</Link>
-          <Link to="/camera" className={location.pathname === '/camera' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.camera')}</Link>
-          <Link to="/live" className={location.pathname === '/live' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.live')}</Link>
-          <Link to="/competitions" className={location.pathname === '/competitions' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.competitions')}</Link>
-          <Link to="/auction" className={location.pathname === '/auction' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.auction')}</Link>
-          <Link to="/grants" className={location.pathname === '/grants' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.grants')}</Link>
-          <Link to="/ngos" className={location.pathname === '/ngos' ? 'active-link' : ''} onClick={closeMobileMenu}>{t('nav.ngos')}</Link>
+          <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} onClick={closeMobileMenu}>Home</Link>
+          <Link to="/camera" className={location.pathname === '/camera' ? 'active-link' : ''} onClick={closeMobileMenu}>Camera</Link>
+          <Link to="/live" className={location.pathname === '/live' ? 'active-link' : ''} onClick={closeMobileMenu}>Live</Link>
+          <Link to="/competitions" className={location.pathname === '/competitions' ? 'active-link' : ''} onClick={closeMobileMenu}>Competitions</Link>
+          <Link to="/auction" className={location.pathname === '/auction' ? 'active-link' : ''} onClick={closeMobileMenu}>Auction</Link>
+          <Link to="/grants" className={location.pathname === '/grants' ? 'active-link' : ''} onClick={closeMobileMenu}>Grants</Link>
+          <Link to="/ngos" className={location.pathname === '/ngos' ? 'active-link' : ''} onClick={closeMobileMenu}>NGOs</Link>
         </div>
       </div>
 
@@ -52,13 +52,13 @@ const Navbar = ({ onOpenSearch, onOpenCart, onOpenNotif, cartCount = 0, unreadCo
       </Link>
 
       <div className="nav-center-links">
-        <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} style={{ textDecoration: 'none' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('nav.home')}</Link>
-        <Link to="/camera" className={location.pathname === '/camera' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>{t('nav.camera')}</Link>
-        <Link to="/live" className={location.pathname === '/live' ? 'active-link' : ''} style={{ textDecoration: 'none' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('nav.live')}</Link>
-        <Link to="/competitions" className={location.pathname === '/competitions' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>{t('nav.competitions')}</Link>
-        <Link to="/auction" className={location.pathname === '/auction' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>{t('nav.auction')}</Link>
-        <Link to="/grants" className={location.pathname === '/grants' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>{t('nav.grants')}</Link>
-        <Link to="/ngos" className={location.pathname === '/ngos' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>{t('nav.ngos')}</Link>
+        <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} style={{ textDecoration: 'none' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>
+        <Link to="/camera" className={location.pathname === '/camera' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>Camera</Link>
+        <Link to="/live" className={location.pathname === '/live' ? 'active-link' : ''} style={{ textDecoration: 'none' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Live</Link>
+        <Link to="/competitions" className={location.pathname === '/competitions' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>Competitions</Link>
+        <Link to="/auction" className={location.pathname === '/auction' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>Auction</Link>
+        <Link to="/grants" className={location.pathname === '/grants' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>Grants</Link>
+        <Link to="/ngos" className={location.pathname === '/ngos' ? 'active-link' : ''} style={{ textDecoration: 'none' }}>NGOs</Link>
       </div>
 
       <div className="nav-right-actions">
