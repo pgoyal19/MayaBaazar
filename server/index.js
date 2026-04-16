@@ -45,6 +45,10 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ ok: false, message: 'Internal server error' });
 });
 
-app.listen(PORT, () => {
-  console.log(`[maaya-api] listening on http://localhost:${PORT} (${isProd ? 'production' : 'development'})`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`[maaya-api] listening on http://localhost:${PORT} (${isProd ? 'production' : 'development'})`);
+  });
+}
+
+export default app;
